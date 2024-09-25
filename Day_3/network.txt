@@ -1,0 +1,85 @@
+network
+metode untuk menghubungkan perangkat computer Bersama
+method to connecting multiple PC together
+several pc in organization connect with each other in network to internal server, and have 1 router to connect it to internet, same principle with our own devices, connect to our router or wifi to the network or Internet
+it is using LAN network, NET connect several LAN together to communicate between each
+
+protocol (network coms standard)
+standard comuication network, manage how device connect with each other, foundation of network
+define as standard for network and the device connected to communicate with each other
+rules data format, how data is sent, how data is received. 
+7th layer -> OSI basic reference model (open system interconnection)
+
+Osi
+application presentation session 
+transport network
+datalink physical
+
+physical layer : convert electrical signal, ethernet, fiber optic, repeaters
+data link: control data transmission, ethernet, IEE 802.11, Token RIng, PPP, bridges, switches
+network: enable connection between different LAN, IP, router
+transport: ensure data sent from source arrive correctly to destination, TCP,UDP
+TCP: connection oriented, reliability high, transfer speed slow, web browsing, file transfer, 
+UDP: connection less, low, fast, dns, ntp, dhcp, snmp, voice call, video streaming, 
+session: manage session virtual connection and provide synchronization for send/receive data, maintain it can be continued
+presentation: define data representing format, distinguishing between data, specifies data representation format, include encryption, compression, character encoding
+application: provide communication between server programs and user application, ssh, http, smtp, pop
+
+ssh : protocol for communicating with remote computer, 22ca
+http: protocol used for transferring web pages on the WWW, 80,443
+smtp: protocol responsible for e-mail, manage between mail server, 25
+
+osi: designe to address necessary functions for coms protocol
+tcp/ip: framework design to address how to implement communication protocol in computer
+application, transport, internet, network interface
+application layer: protocol for interaction with application, web browser, email
+transport layer: ensuring reliability in communication, break into small segment, 
+internet : communication with intended recipient, manage the package to the destination, break into small part again
+Network interface: communicationg with nearest device, can transmission with cable to output, switch, router
+
+IP
+carrying packets from one network to another to deliver to the recipient, routing
+IP address: as an address wthin the network, similar to postal address
+TCP
+established a connection with communication partner before transmitting data, ensuing reliable and ordered data transfer
+
+IP address
+each device connected to the network is assigne a unique number for management, identify device
+represented as 32-bit number into 8-bit segment
+
+global ip address: identify device in internet for global
+private ip address: identify device in LAN network
+
+subnet mask: specifies which part of the IP address is the network addresss
+1: indicate the network address portion
+0: indicate host address portion
+ 
+network address: identifier for host on a telecommunications network
+AND operation: ipaddress and subnet mask
+
+broadcast address: address that reaches all device connected to the network, communicate with all device
+
+IP address class
+define the class based on scale, A,B,C
+each class specifies how many bits out of 32 bit address are allocated to network add0ress, effect number of host
+
+DHCP
+process of assigning IP address and configuring network setting automated, dns address, gateway
+leased period, can be renew automatically when the leased period terminated
+
+static IP: unchanged unless deliberately modified, network administrator
+dynamic IP: assigne automatically and change over time. (leased period), network administrator
+
+a dynamically assigne IP address usually works fine, can be more secure less likely to be targeted by attack.
+for device like printer, it is more practical using static ip.
+
+localhost: hostname that points to oneself, accessing server in our computer
+independent of external network settings, can be used even not connected to network
+
+
+
+
+
+
+
+

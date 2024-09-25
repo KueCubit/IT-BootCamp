@@ -1,0 +1,87 @@
+Security
+protecting data, system, and communication pathways=>when accessing from browser to server, it needs protection
+eliminate risk of confidentiality leaks, external attacks, tampering
+
+Unauthorized Access, authentic user, data integrity, audit
+user authorized: process of verifying whether a user trying to access
+unauthorized individual accessing third party information or server without permission
+	password list attack(data breach, bruteforce with another credential), sql injection, cross-site scripting (inject script)
+measure:
+user: avoid reusing same password across multiple accounts
+website: limit IP, reCAPTCHA
+
+sql: attacker intentionally exploits vulnerabilitis in an application security to execute sql statemet that app does not expect, manipulate database server, using OR function
+measure:
+implement excaping techniques: replacing or removing special character that have special meaning in SQL quaries
+web app firewall: security in layer 7th, prevent unauthorized access by monitoring and managing web application
+
+cross-site (xss): insert malicious script into dynamic sites, where end users can create web page themselves
+measure: implement escaping, limit input values only allow several , implement WAF
+
+data transmitted over the network is usually in plaintext,
+
+threats
+eavesdropping: individual intercepting and vieweing data
+
+tampering: modifying or altering data
+
+spoofing: 3rd party pretending tobe a legitimate entity to conduct transaction or transfer
+
+encryption: transforming data into form that is not understable to 3rd parties, decrption(reverting encrypted data to original form)
+symmetric key encryption: use same encryption for the two parties
+public key: different pair key for encryp and decrypt, using public key to encrypt, and private key to decrypt
+digital signature
+
+sym vs public
+same key, different key
+each user all keys, only private key
+confidentiality essential, encryption can be published
+processing high, slow
+
+digital signature: to detect data tampering, using techniques from public key, veriffication digest with signature
+data encrypt with private key, can only be decrypted with corresponding public key
+data encrypt with public key, can only be decrypted with corresponding private key
+
+digital certificate, SSL server certificate
+digital signature can detect tampering of data, however digital signature alone doesnot verify whether public key being used in genuinely correct
+issued by CA
+verify identity of communication partner by checking 
+
+SSL/TLS
+public key, symmetric key, pemrosesannya lebih cepat, 
+
+internet has many user with malicious untent, attack method are varied and so are the ways to defend
+as creators, important to acqyure proper knowledge of security measures to ensure that legitimate user can use our service with confidence
+information security guidelines by IPA
+
+brute force att
+user: use password as long as possible, combined
+website: implement system that enforce the creation of such password
+
+rainbow table att: table contain both plaintext passwords and their corresponding hashed values
+
+Hashing: process converting original data into fixed length value that appears random, according to hash algorithm, irreversible transformation
+
+stretching: method involve repeateedly applying the hash function when computing its hash value
+
+Caesar cipher: shift character bu a number specified to produce ciphertext (stream)
+block cipher: general term for encryption method that process data in fixed size block
+stream cipher: 
+
+rsa encryption
+elliptic curve dsa (ecdsa)
+
+process of digital certificates
+buy from CA, and apply to the server
+
+DoS att
+sending a large volume of data to target site or server, abnormal increase in traffic, causing server or site become overwhelmed and crash or become unavaible
+
+monitoring IP address, restricting access from specific IP address
+
+DDoS att
+multiple machine are hijacked using malware, used to launch DoS att, using multiple IP address
+WAF, ddos protection tools
+
+
+

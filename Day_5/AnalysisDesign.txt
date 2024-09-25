@@ -1,0 +1,11 @@
+External Internal Design
+the process of creating the necessary information for programmers to perform  programming based on deliverables
+step by step systematically, requirement definition => external => internal
+
+External Design: output UI/UX
+raw process of system development
+translate requirement client into system structure
+Decide on specification 
+
+Internal Design
+Database, Network, Infrastructure system

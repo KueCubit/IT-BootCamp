@@ -1,0 +1,54 @@
+/* 初期設定 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #2a120a;
+  background-color: #4c372b;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+header {
+  margin-bottom: 10px;
+}
+
+main,
+footer {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  background-size: 12px 12px;
+  background-image: linear-gradient(
+    0deg,
+    #f2dec8 0%,
+    #f2dec8 50%,
+    #e5caab 50%,
+    #e5caab 100%
+  );
+}
+
+footer {
+  height: 1.5em;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}

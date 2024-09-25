@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <title>Caffe Morijiri / Menu</title>
+  </head>
+
+  <body>
+    <main>
+      <!-- ヘッダー -->
+      <header>
+        <h1>
+          <img
+            class="header-logo-image"
+            src="./img/top_logo.png"
+            alt="Caffe Morijiri"
+          />
+        </h1>
+        <div class="heading-image-wrapper">
+          <img src="./img/main.png" alt="caffe image" />
+          <nav>
+            <ul class="menu-list">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./menu.html">Menu</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- 本文 -->
+      <article class="content border cream">
+        <h3 class="menu-title">Menu</h3>
+        <div id="menus" class="menus"></div>
+      </article>
+    </main>
+    <!-- フッター -->
+    <footer>
+      <small>&#169; 2024 AsiaQuest All rights reserved.</small>
+    </footer>
+
+    <!-- React を使うために外部のソースコードを読み込む -->>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- div.#menus の中に コンテンツを作成する -->
+    <script type="text/babel">
+      // レンダリング
+      const container = document.getElementById("menus");
+      ReactDOM.render(<div />, container);
+    </script>
+  </body>
+</html>

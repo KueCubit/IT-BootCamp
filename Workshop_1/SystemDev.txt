@@ -1,0 +1,124 @@
+System Development
+Process from Order to Delivery (model waterfall)
+waterfall: depend on the process, can not go through or skip the process, one by one
+requirement definition, system analysis and design, system development, testing, maintenance and operation
+
+agile model: assign in more small deliver, sprint, iteration interaction, can do at same time
+requirement, analysis, testing, development as one segment development process 
+
+RFI: request for information 
+vendor giving consultation to client, client will provide the project specification, identify the needs from vendor,
+
+RFP: request for Proposal
+identify specific requirements, solution design, 
+identify required project, list of proposal description, budgeting
+
+Contract: review proposal and estimate
+
+Flow of Development
+Requirement Definition: process involves clarifying the function required for system, made clear
+ensure the client mind is aligned with the developers
+which business processes need to be systematized
+what functionalities are necessary
+what performance criteria are required
+step:
+category functional, non-functional, technical, business,
+analysis and evaluation
+identify the most impact one, prioritizing
+case scenario, used case,
+validating
+
+System analysis and Design: translated into specific, actionable details to enable the development process effectively
+external design(screen, UI, perspective of the end user), internal design(function design), data design
+
+Development Implementaiton: proceed programming and infrastructure setup according to the speciffication defined
+testing: identify defects in developed software and improve those defects to create a better software product.
+
+System Dev Methodologies
+waterfall = linear and sequential approach to software dev. each phase must be completed berfore the next phase
+advantage = progress management and estimation are easire because each phase must be completed first
+disadvantage = significant cost can be incurred if there are changes in requirement or correction needed during process
+suitable case = quality must be guaranteed and no failures are acceptable, banking system, stock exchange, telecom system
+
+agile = involve repeateing processes from requirement definition, testing, to operation in small cycles for each feature
+adv= flexibly respond to specification changes and closely meet the client request
+disadv= schedule management and control are difficult
+suitable case = cases where dev priorites may changed based on client business situation, priority or specification may changes
+
+----------------------------
+Requirement Definition
+purpose= understand overall process and task involced in requirment definition and design phanse system development
+obj= able to explain overall process of requirement definition and design phase
+	able to independently create deliverables for the requirements defininiton
+
+the process of creating information needed by programmaers to perform programming after receiving customer requirment
+requirements definition, external design, internal design => specification document
+-allign the understanding between customer and developers => what needs to be done
+-decide on specification of the system => what kind of system build
+-decide internal specification of system, comunicate to progammaer what kind of system build
+
+organize the customer what they want to do(request/requirement) and align understanding(definition) on what will be achieved(requirement)
+
+work process:
+
+study case
+client= railway operating company tokyo 200 stations, number employees 10000
+request= large number of lost items are delivered every day, recorded paper list management, tracking the items owner 
+
+1.project policy= communicate to all stakeholders, organize and present background, obj, outcomes, constraint, scope of system emplement
+step=
+-project background and obj: unfavorable current situation that led to the decision build system, 
+obj:goal to achieved through system implementation
+{200 station received and hand over large number items, implenting system to manage
+-expected outcome= describe benefit in terms cost, speed, work quality, specify required target
+{speed up process handling over lost item, reduce rate of lost item misplacement
+-project scope= clarify business, operation, departementt, and system scope project, specifying what is not included
+{lost items management
+-project constraint= contraint factors of time, cost, resource
+{system operational end November 2019
+
+2.review current operation= create a business workflow diagram, overall flow of business is visible, 
+digramming and visually analyzing business process
+steps:
+-identify target business process= start with high level business processes then break them down into more detailed task
+{lost item management => - lost item handling, - lost item hand over
+-identify participant each phase
+{lost item handling: who lost, who found, station staff, lost item handover: who lost, station staff
+-identify task for each participant= do not place process in parallel, standard flowchat, indicate where document and system utilized
+-identify 
+
+3. issue= hinder the project objective and determine the problem that need to be addressed
+steps;
+-collect issue through survey= use standardized survey form high quality response
+-organize issue through interview= clarify ambiguous, verify causal relationship, exlude problem outside scope
+-evaluate the problem, determine issue= avoid solve all issue at once, evaluate based on criteria importance, urgency, diffulty
+
+4. solution for issue
+step:
+-draft initial solution= do not consider solution solely based on system mechanism, business, content, policies, environtment
+-review and decide= ensure customer agreement based on the policies, rules, organization structure
+
+5. new business workflow= review updated business process incorporating the solution to the issue, future businees workflow digarm
+step:
+-identify the target business= ensure business flow include all the solution issue
+-identify 
+
+6. funtional requirement= feature specific operation related to the database, 
+identify list funtion required for the system to fulfill future business 
+	identify necessary funtion for system, specific operation on specific type of data
+	verify identified function can be execute 
+
+7. Non functional requirement= feature that not really connected to the business directly, compatibility, portability, security
+define non functional requirement
+step
+-collect user requirement= conduct interview based on criteria
+-asses the immprtance requirement= all individual opinion are adopted, may lead to unnecessary requirement
+-determine non functional requiremend to address important needs= 
+
+8. execution plan= creat project execution plan to implement defined requirement, schedule,
+step
+-define development process= detailed task item and schedule each phase
+-determine schedule= make gantchart
+-establish project plan
+-define the deliverable
+
